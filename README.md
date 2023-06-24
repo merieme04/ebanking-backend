@@ -1,43 +1,43 @@
-## Gestion des Comptes Bancaires 
+# Gestion des Comptes Bancaires 
 
-### Description
+## Description
 
-Ce projet vise à développer une application permettant de gérer des comptes bancaires. Chaque compte appartient à un client et peut subir plusieurs opérations de type DEBIT ou CREDIT. Les deux types de comptes pris en charge sont les Comptes Courants et les Comptes Épargne.
+This project aims to develop an application for managing bank accounts. Each account belongs to a client and can undergo multiple DEBIT or CREDIT operations. The two types of supported accounts are Current Accounts and Savings Accounts.
 
-### Architecture en Couches
+## Layered Architecture
 
-L'application suivra une architecture en couches pour assurer une séparation claire des responsabilités et faciliter la scalabilité et la maintenabilité du code. Les principales couches incluent :
+The application follows a layered architecture to ensure clear separation of concerns and facilitate code scalability and maintainability. The main layers include:
 
-- **Couche DAO (Data Access Object)** : Cette couche est responsable de l'accès aux données et de la communication avec la base de données. Elle utilise les entités JPA (Java Persistence API) pour représenter les objets métier.
+- **DAO (Data Access Object) Layer**: This layer is responsible for data access and communication with the database. It utilizes JPA (Java Persistence API) entities to represent the business objects.
 
-- **Couche Service** : Cette couche gère la logique métier de l'application. Elle utilise les DAOs pour accéder aux données, effectuer des opérations et traiter les règles métier.
+- **Service Layer**: This layer handles the business logic of the application. It uses the DAOs to access data, perform operations, and enforce business rules.
 
-- **Couche Présentation** : Cette couche est chargée de présenter les données à l'utilisateur et de recevoir les entrées de l'utilisateur. Elle comprend les RestControllers qui exposent une API REST pour interagir avec l'application.
+- **Presentation Layer**: This layer is responsible for presenting data to the user and receiving user inputs. It includes RestControllers that expose a REST API to interact with the application.
 
-- **Couche Front-end** : Cette couche concerne l'interface utilisateur et sera développée en utilisant le framework Angular.
+- **Front-end Layer**: This layer pertains to the user interface and will be developed using the Angular framework.
 
-### Installation
+## Installation
 
-Pour exécuter l'application, suivez les étapes ci-dessous :
+To run the application, follow the steps below:
 
-1. Clonez le dépôt du projet en utilisant la commande : `git clone https://github.com/MarshelD/E_Bank`
-2. Accédez au dossier backend : `cd backend`
-3. Importez le projet backend dans votre IDE préféré, tel que Eclipse ou IntelliJ.
-4. Exécutez le projet backend en cliquant sur le bouton "Run" de votre IDE. Assurez-vous d'avoir configuré correctement votre environnement Java et Maven pour exécuter un projet Spring Boot.
-5. Accédez au dossier frontend : `cd ../frontend`
-6. Installez les dépendances en utilisant la commande : `npm install`
-7. Lancez l'application frontend en utilisant la commande : `npm start`. Assurez-vous d'avoir Node.js et Angular CLI installés sur votre machine pour exécuter l'application frontend.
+1. Clone the project repository using the command: `git clone https://github.com/MarshelD/E_Bank`
+2. Navigate to the backend folder: `cd backend`
+3. Import the backend project into your preferred IDE, such as Eclipse or IntelliJ.
+4. Run the backend project by clicking the "Run" button in your IDE. Make sure you have properly configured your Java and Maven environment to run a Spring Boot project.
+5. Navigate to the frontend folder: `cd ../frontend`
+6. Install the dependencies using the command: `npm install`
+7. Launch the frontend application using the command: `npm start`. Make sure you have Node.js and Angular CLI installed on your machine to run the frontend application.
 
-### Structure du Projet
+## Project Structure
 
-Le projet est organisé en deux parties distinctes :
+The project is organized into two distinct parts:
 
-1. Backend : développé en utilisant le framework Spring Boot, cette partie comprend les couches DAO, Service et les RestControllers. Le code source du backend se trouve dans le dossier "backend".
+1. Backend: developed using the Spring Boot framework, this part includes the DAO, Service layers, and RestControllers. The backend source code can be found in the "backend" folder.
 
-2. Frontend : développé en utilisant Angular, cette partie concerne l'interface utilisateur de l'application. Le code source du frontend se trouve dans le dossier "frontend".
+2. Frontend: developed using Angular, this part concerns the user interface of the application. The frontend source code can be found in the "frontend" folder.
 
-### Contributions
+## Contributions
 
-Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, veuillez consulter le fichier CONTRIBUTING.md pour obtenir des instructions détaillées. Toutes les formes de contributions, telles que les corrections de bugs, les améliorations de fonctionnalités ou les suggestions d'amélioration de l'expérience utilisateur, sont appréciées.
+Contributions are welcome! If you wish to contribute to this project, please refer to the CONTRIBUTING.md file for detailed instructions. All forms of contributions, such as bug fixes, feature enhancements, or suggestions for improving the user experience, are appreciated.
 
-Nous espérons que vous apprécierez notre application de gestion des comptes bancaires. N'hésitez pas à nous contacter si vous avez des questions ou des commentaires. Bonne utilisation !
+We hope you enjoy using our bank account management application. Feel free to contact us if you have any questions or feedback. Happy banking!
